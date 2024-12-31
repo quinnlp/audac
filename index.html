@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text-to-Audio WebApp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    input, button {
+      margin: 10px 0;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Text-to-Audio Converter</h1>
+  <label for="mappingFile">Upload Audio Mapping File (JSON):</label>
+  <input type="file" id="mappingFile" accept=".json"><br>
+  
+  <label for="textSequence">Enter Text Sequence:</label><br>
+  <input type="text" id="textSequence" placeholder="Enter text here"><br>
+  <input 
+        id="playbackRate" 
+        type="number" 
+        min="0.1" 
+        step="0.1" 
+        placeholder="1.0" 
+        required 
+  > 
+  <button id="playButton">Play Audio</button><br>
+  <button id="downloadButton">Download Audio (WAV)</button>
+  
+  <p id="status"></p>
+  <script src="wav-encoder.js"></script>
+  <script>
+    console.log(WavEncoder); // This should log the library object
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
+

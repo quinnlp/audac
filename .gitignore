@@ -1,0 +1,9 @@
+# ignore pyinstaller files
+*.spec
+build
+
+# ignore macos files
+.DS_STORE
+
+# ignore env files
+env
