@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text-to-Audio WebApp</title>
+  <title>AudAC</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -16,7 +16,7 @@
   </style>
 </head>
 <body>
-  <h1>Text-to-Audio Converter</h1>
+  <h1>AudAC</h1>
   <label for="mappingFile">Upload Audio Mapping File (JSON):</label>
   <input type="file" id="mappingFile" accept=".json"><br>
   
@@ -27,7 +27,8 @@
         type="number" 
         min="0.1" 
         step="0.1" 
-        placeholder="1.0" 
+        placeholder="1.0"
+	default="1.0"
         required 
   > 
   <button id="playButton">Play Audio</button><br>
